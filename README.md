@@ -13,29 +13,28 @@
 ### API说明
 
 #### 1.数字换台  
-调用示例:  
 ```
-Intent intent = new Intent("com.elinkway.tvlive2.ChangeChannel"); Intent.putExtra("channel_num", "");  
+Intent intent = new Intent("com.elinkway.tvlive2.ChangeChannel"); 
+Intent.putExtra("channel_num", "");  
 Intent.putExtra("from", "");  
 startService(intent);  
 ```
 
 #### 2. 切换上一频道  
-调用示例:  
 ```
-Intent intent = new Intent("com.elinkway.tvlive2.PreChannel"); Intent.putExtra("from", "");  
+Intent intent = new Intent("com.elinkway.tvlive2.PreChannel"); 
+Intent.putExtra("from", "");  
 startService(intent);  
 ```
 
 #### 3. 切换下一频道  
-调用示例:  
 ```
-Intent intent = new Intent("com.elinkway.tvlive2.NextChannel"); Intent.putExtra("from", "");  
+Intent intent = new Intent("com.elinkway.tvlive2.NextChannel"); 
+Intent.putExtra("from", "");  
 startService(intent);  
 ```
 
 #### 4. 播放指定URL频道  
-调用示例:  
 ```
 Intent intent = new Intent("com.elinkway.tvlive2.playUrl");  
 // 设置自定义频道列表地址  
