@@ -20,25 +20,25 @@
 
 #### 2. 切换上一频道  
 调用示例:  
-Intent intent = new Intent("com.elinkway.tvlive2.PreChannel"); Intent.putExtra("from", "");  
-startService(intent);  
+> Intent intent = new Intent("com.elinkway.tvlive2.PreChannel"); Intent.putExtra("from", "");  
+> startService(intent);  
 
 #### 3. 切换下一频道  
 调用示例:  
-Intent intent = new Intent("com.elinkway.tvlive2.NextChannel"); Intent.putExtra("from", "");  
-startService(intent);  
+> Intent intent = new Intent("com.elinkway.tvlive2.NextChannel"); Intent.putExtra("from", "");  
+> startService(intent);  
 
 #### 4. 播放指定URL频道  
 调用示例:  
-Intent intent = new Intent("com.elinkway.tvlive2.playUrl");  
-// 设置自定义频道列表地址  
-intent.putExtra("data_source", "http://7xo8iy.com2.z0.glb.qiniucdn.com/3rd.json");  
-// 播放自定义频道列表中的指定频道  
-intent.putExtra("channel_url", "http://gslb.live.video123456.com/gslb?stream_id=cctv3HD_1300&tag=live&ext=m3u8&sign=live_tv");  
-intent.putExtra("from", "");  
-intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);  
-intent.setComponent(new ComponentName("com.elinkway.tvlive2", "com.elinkway.tvlive2.activity.ThirdLauncherSplashActivity"));  
-startActivity(intent);  
+> Intent intent = new Intent("com.elinkway.tvlive2.playUrl");  
+> // 设置自定义频道列表地址  
+> intent.putExtra("data_source", "http://7xo8iy.com2.z0.glb.qiniucdn.com/3rd.json");  
+> // 播放自定义频道列表中的指定频道  
+> intent.putExtra("channel_url", "http://gslb.live.video123456.com/gslb?stream_id=cctv3HD_1300&tag=live&ext=m3u8&sign=live_tv");  
+> intent.putExtra("from", "");  
+> intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);  
+> intent.setComponent(new ComponentName("com.elinkway.tvlive2", "com.elinkway.tvlive2.activity.ThirdLauncherSplashActivity"));  
+> startActivity(intent);  
 
 
 ## 声明
