@@ -1,32 +1,34 @@
 ## 电视家直播第三方服务器调用示例
 
-### 步骤
-`1.按照电视家指定的json文件格式，编辑频道列表
-2.将json文件保存在自己的服务器上
-3.修改MainActivity.java中SERVER_URL为你自己的url。
-4.修改包名、签名为你自己期望的。
-5.编译、测试、发版。`
+### 步骤  
+1.按照电视家指定的json文件格式，编辑频道列表  
+2.将json文件保存在自己的服务器上。  
+3.修改MainActivity.java中SERVER_URL为你自己的url。  
+4.修改包名、签名为你自己期望的。  
+5.编译、测试、发版。  
 
 ### 原理
 `电视家提供了自定义频道的播控等Intent接口。`
 
 ### API说明
-1.数字换台  
+
+#### 1.数字换台  
 调用示例:  
 Intent intent = new Intent("com.elinkway.tvlive2.ChangeChannel"); Intent.putExtra("channel_num", "");  
 Intent.putExtra("from", "");  
 startService(intent);  
 
-2. 切换上一频道  
+#### 2. 切换上一频道  
 调用示例:  
 Intent intent = new Intent("com.elinkway.tvlive2.PreChannel"); Intent.putExtra("from", "");  
 startService(intent);  
 
-3. 切换下一频道  
+#### 3. 切换下一频道  
 调用示例:  
 Intent intent = new Intent("com.elinkway.tvlive2.NextChannel"); Intent.putExtra("from", "");  
 startService(intent);  
-4. 播放指定URL频道  
+
+#### 4. 播放指定URL频道  
 调用示例:  
 Intent intent = new Intent("com.elinkway.tvlive2.playUrl");  
 // 设置自定义频道列表地址  
