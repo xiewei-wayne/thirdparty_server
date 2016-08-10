@@ -14,9 +14,9 @@
 
 #### 1.数字换台  
 调用示例:  
-Intent intent = new Intent("com.elinkway.tvlive2.ChangeChannel"); Intent.putExtra("channel_num", "");  
-Intent.putExtra("from", "");  
-startService(intent);  
+> Intent intent = new Intent("com.elinkway.tvlive2.ChangeChannel"); Intent.putExtra("channel_num", "");  
+> Intent.putExtra("from", "");  
+> startService(intent);  
 
 #### 2. 切换上一频道  
 调用示例:  
